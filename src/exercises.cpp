@@ -14,6 +14,15 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
+  int result
+  if(num2 == 0){
+    cout << "Imposible" << endl;
+  }
+  else{
+    result = num1 / num2;  
+  }
+  cout << result << endl;
+  
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
