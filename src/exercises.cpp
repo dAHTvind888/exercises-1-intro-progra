@@ -20,8 +20,8 @@ void exercise_3(int a, int b) {
   }
   else{
     result = a / b;  
+    cout << result << endl;
   }
-  cout << result << endl;
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
