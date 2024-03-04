@@ -16,7 +16,7 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   int result;
   if(b == 0){
-    cout << "Impossible" << endl;
+    cout << "Imposible" << endl;
   }
   else{
     result = a / b;  
