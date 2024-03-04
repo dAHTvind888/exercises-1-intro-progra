@@ -14,7 +14,7 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-  int result
+  int result;
   if(b == 0){
     cout << "Imposible" << endl;
   }
