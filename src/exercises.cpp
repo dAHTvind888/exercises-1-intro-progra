@@ -22,6 +22,7 @@ void exercise_3(int a, int b) {
     result = num1 / num2;  
   }
   cout << result << endl;
+  cout << "'g";
   
 }
 
