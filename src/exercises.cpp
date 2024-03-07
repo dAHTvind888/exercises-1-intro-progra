@@ -8,7 +8,7 @@ void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
   string min_lex = min(min(s1, s2), s3);
   cout << min_lex;
-  //ask for help
+  // << endl makes it so the exercise is wrong
 }
 
 void exercise_2(double A, double B, double C) {
@@ -22,7 +22,8 @@ void exercise_2(double A, double B, double C) {
   double result_1 = (outside_sqrt + sqrt_X)/(divisor);
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
-  cout << result_1 << " " << result_2;
+  cout << result_1 << " " << result_2 << endl;
+
 }
 
 void exercise_3(int a, int b) {
