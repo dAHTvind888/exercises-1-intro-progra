@@ -22,7 +22,7 @@ void exercise_2(double A, double B, double C) {
   double result_1 = (outside_sqrt + sqrt_X)/(divisor);
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
-  cout << result_1 << " " << result_2 << endl;
+  cout << result_1 << " " << result_2;
 
 }
 
