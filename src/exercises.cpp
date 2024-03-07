@@ -13,7 +13,16 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-
+  double outside_sqrt = -B;
+  double sqrt_power = pow(B,2);
+  double sqrt_multiply = -4 * A * C;
+  double sqrt_X = sqrt(sqrt_power + sqrt_multiply);
+  double divisor = 2 * A;
+  
+  double result_1 = (outside_sqrt + sqrt_X)/(divisor);
+  double result_2 = (outside_sqrt - sqrt_X)/(divisor);
+  
+  cout << result_1 << " " << result_2;
 }
 
 void exercise_3(int a, int b) {
