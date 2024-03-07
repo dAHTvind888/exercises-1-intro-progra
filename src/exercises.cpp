@@ -6,7 +6,7 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  string min_lex = (min(s1, s2), s3);
+  string min_lex = min(min(s1, s2), s3);
   cout << min_lex << endl;
 }
 
