@@ -7,11 +7,13 @@ using namespace std;
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
   string min_lex = min(min(s1, s2), s3);
-  cout << min_lex << endl;
+  cout << min_lex;
+  //ask for help
 }
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_3(int a, int b) {
