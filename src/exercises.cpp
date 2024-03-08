@@ -74,10 +74,10 @@ void exercise_5(char character) {
   if(isalpha(character)){
     if(character == toupper(character)){
       cout << "upper-case alphabet" << endl;
-  }
+    }
     else if(character == tolower(character)){
       cout << "lower-case alphabet" << endl;
-  }
+    }
   }
   
   else{
