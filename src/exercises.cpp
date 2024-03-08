@@ -18,12 +18,14 @@ void exercise_2(double A, double B, double C) {
   double sqrt_multiply = -4 * A * C;
   double sqrt_X = sqrt(sqrt_power + sqrt_multiply);
   double divisor = 2 * A;
-  
-  
+
   double result_1 = (outside_sqrt + sqrt_X)/(divisor);
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
-  if(A == 0){
+  if(B == 0){
+    cout << "" << endl;
+  }
+  else if(A == 0){
     double result_3 = (-1 * C) / B;
     cout << result_3 << endl;
   }
@@ -33,7 +35,6 @@ void exercise_2(double A, double B, double C) {
   else if(to_string(result_1) == "-nan"){
     cout << "" << endl;
   }
-  
   else{
     cout << result_1 << " " << result_2 << endl;
   }
