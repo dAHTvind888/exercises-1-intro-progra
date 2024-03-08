@@ -33,7 +33,7 @@ void exercise_2(double A, double B, double C) {
     cout << result_1 << endl;
   }
   else if(to_string(result_1) == "-nan"){
-    cout << "" << endl;
+    cout << "";
   }
   else{
     cout << result_1 << " " << result_2 << endl;
@@ -122,7 +122,8 @@ void exercise_7(double r) {
     cout << "Error: Radius cannot be negative." << endl;
   }
   else{
-    double area = M_PI * pow(r, 2);
+    4 π r 2
+    double area = 4 * M_PI * pow(r, 2);
     cout << area << endl;
   }
   //seems the calculation of the github is wrong. Ask for help
