@@ -92,25 +92,25 @@ void exercise_6(int number) {
       cout << "Invalid input" << endl;
       break;
     case 1:
-      cout << "Lunes" << endl;
+      cout << "Monday" << endl;
       break;
     case 2:
-      cout << "Martes" << endl;
+      cout << "Tuesday" << endl;
       break;
     case 3: 
-      cout << "Miercoles" << endl;
+      cout << "Wednesday" << endl;
       break;
     case 4: 
-      cout << "Jueves" << endl;
+      cout << "Thursday" << endl;
       break;
     case 5: 
-      cout << "Viernes" << endl;
+      cout << "Friday" << endl;
       break;
     case 6: 
-      cout << "Sabado" << endl;
+      cout << "Saturday" << endl;
       break;
     case 7: 
-      cout << "Domingo" << endl;
+      cout << "Sunday" << endl;
       break;   
   }
 }
