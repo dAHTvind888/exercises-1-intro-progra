@@ -124,6 +124,7 @@ void exercise_7(double r) {
   else{
     4 π r 2
     double area = 4 * M_PI * pow(r, 2);
+    
     cout << area << endl;
   }
   //seems the calculation of the github is wrong. Ask for help
