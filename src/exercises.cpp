@@ -122,7 +122,7 @@ void exercise_7(double r) {
     cout << "Error: Radius cannot be negative." << endl;
   }
   else{
-    double area = 4 * M_PI * pow(r, 2);
+    double area = 4 * 3.14 * pow(r, 2);
     cout << area << endl;
   }
   //seems the calculation of the github is wrong. Ask for help
