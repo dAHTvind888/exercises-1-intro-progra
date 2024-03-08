@@ -88,9 +88,6 @@ void exercise_5(char character) {
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
   switch(number){
-    case 0:
-      cout << "Invalid input" << endl;
-      break;
     case 1:
       cout << "Monday" << endl;
       break;
@@ -112,6 +109,8 @@ void exercise_6(int number) {
     case 7: 
       cout << "Sunday" << endl;
       break;   
+    default:
+      cout << "Invalid input" << endl; 
   }
 }
 
