@@ -23,20 +23,20 @@ void exercise_2(double A, double B, double C) {
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
   if(B == 0){
-    cout << "" << endl;
+    cout << "";
   }
   else if(A == 0){
     double result_3 = (-1 * C) / B;
-    cout << result_3 << endl;
+    cout << result_3;
   }
   else if(result_1 == result_2){
-    cout << result_1 << endl;
+    cout << result_1;
   }
   else if(to_string(result_1) == "-nan"){
-    cout << "" << endl;
+    cout << "";
   }
   else{
-    cout << result_1 << " " << result_2 << endl;
+    cout << result_1 << " " << result_2;
   }
   //it seems there's a problem with the endl, ask for help
 }
