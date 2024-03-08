@@ -23,7 +23,7 @@ void exercise_2(double A, double B, double C) {
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
   if(A == 0){
-    double result_3 = -C / B;
+    double result_3 = (-1 * C) / B;
     cout << result_3 << endl;
   }
   else if(result_1 == result_2){
