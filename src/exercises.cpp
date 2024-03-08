@@ -71,6 +71,18 @@ void exercise_4(double n, double a, double b, double x, double y) {
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+  if(isalpha(character)){
+    if(character == toupper(character)){
+      cout << "upper-case alphabet" << endl;
+  }
+    else if(character == tolower(character)){
+      cout << "lower-case alphabet" << endl;
+  }
+  }
+  
+  else{
+    cout << "not an alphabet" << endl;
+  }
 }
 
 void exercise_6(int number) {
