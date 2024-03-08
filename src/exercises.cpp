@@ -56,16 +56,16 @@ void exercise_4(double n, double a, double b, double x, double y) {
   if(n > b){
     double discount = (n * y) / 100;
     double price = n - discount;
-    cout << price; 
+    cout << price << endl; 
   }
   else if(n > a){
     double discount = (n* x) / 100;
     double price =  n - discount;
-    cout << price;
+    cout << price << endl;
   }
   
   else{
-    cout << n;
+    cout << n <<endl;
   }
 }
 
