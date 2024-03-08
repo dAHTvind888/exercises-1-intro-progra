@@ -131,6 +131,13 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+  int hour = seconds / 3600;
+  seconds = seconds - (hour * 3600);
+  int min = seconds / 60;
+  seconds = seconds - (min * 60);
+  
+  cout << hour <<":"<< min << ":" <<seconds;
+
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
