@@ -120,7 +120,7 @@ void exercise_7(double r) {
     cout << "Error: Radius cannot be negative." << endl;
   }
   else{
-    float area = M_PI * pow(r, 2);
+    double area = M_PI * pow(r, 2);
     cout << area << endl;
   }
   }
