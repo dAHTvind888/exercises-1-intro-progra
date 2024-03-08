@@ -27,16 +27,16 @@ void exercise_2(double A, double B, double C) {
   }
   else if(A == 0){
     double result_3 = (-1 * C) / B;
-    cout << result_3;
+    cout << result_3 << endl;
   }
   else if(result_1 == result_2){
-    cout << result_1;
+    cout << result_1 << endl;
   }
   else if(to_string(result_1) == "-nan"){
-    cout << "";
+    cout << "" << endl;
   }
   else{
-    cout << result_1 << " " << result_2;
+    cout << result_1 << " " << result_2 << endl;
   }
   //it seems there's a problem with the endl, ask for help
 }
