@@ -22,8 +22,21 @@ void exercise_2(double A, double B, double C) {
   double result_1 = (outside_sqrt + sqrt_X)/(divisor);
   double result_2 = (outside_sqrt - sqrt_X)/(divisor);
   
-  cout << result_1 << " " << result_2;
-
+  if(A == 0){
+    double result_3 = -C / B;
+    cout << result_3;
+  }
+  else if(result_1 == result_2){
+    cout << result_1;
+  }
+  else if(to_string(result_1) == "-nan"){
+    cout << "";
+  }
+  
+  else{
+    cout << result_1 << " " << result_2;
+  }
+  
 }
 
 void exercise_3(int a, int b) {
