@@ -131,13 +131,42 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-  int hour = seconds / 3600;
-  seconds = seconds - (hour * 3600);
-  int min = seconds / 60;
-  seconds = seconds - (min * 60);
-  
-  cout <<hour << ":" << min << ":" << seconds << endl;
+  if(seconds < 0){
+    cout << "Error: Input seconds cannot be negative." << endl;
+  }
+  else{
+    string hour_string, min_string, seconds_string;
+    int hour = seconds / 3600;
 
+    if(hour >= 10){
+      hour_string = hour;    
+    }
+    else{
+      hour_string = "0" + to_string(hour);
+    }
+
+    seconds = seconds - (hour * 3600);
+    int min = seconds / 60;
+
+    if(min >= 10){
+      min_string = to_string(min);
+    }
+    else{
+      min_string = "0" + to_string(min);
+    }
+    
+    seconds = seconds - (min * 60);
+
+    if(seconds >= 10){
+      seconds_string = to_string(seconds);
+    }  
+    else{
+      seconds_string = "0" + to_string(seconds);
+    }
+
+    cout << hour_string << ":" << min_string << ":" << seconds_string << endl;
+  }
+  
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
