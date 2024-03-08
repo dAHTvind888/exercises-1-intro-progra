@@ -136,7 +136,7 @@ void exercise_8(long int seconds) {
   int min = seconds / 60;
   seconds = seconds - (min * 60);
   
-  cout << hour <<":"<< min << ":" <<seconds;
+  cout <<hour << ":" << min << ":" << seconds << endl;
 
 }
 
