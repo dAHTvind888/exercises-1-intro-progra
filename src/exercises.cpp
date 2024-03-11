@@ -171,7 +171,15 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  return "";
+  char char1 = s1[0], char2 = s2[0], char3 = s3[0], char4 = s4[0], char5 = s5[0];
+  if(s1[0] == s5[0]){
+    cout << char1 << char2 << char3 << char4 << char5 << endl;
+    return "Hemos encontrado algo!"; 
+  }
+  else{
+    cout << char1 << char2 << char3 << char4 << char5 << endl;
+    return "Aun sin suerte";
+  }
 }
 
 int exercise_10(int a, int b) {
