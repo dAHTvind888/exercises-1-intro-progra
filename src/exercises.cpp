@@ -196,7 +196,7 @@ string exercise_11(int number) {
   // TODO: YOUR CODE HERE
   int fibonacci = 11235813;
   if(number == fibonacci){
-    return "Se encontro Fibonacci";
+    return "Se encontro a Fibonacci";
   }
   else{
     return "Esto no es de Fibonacci";
