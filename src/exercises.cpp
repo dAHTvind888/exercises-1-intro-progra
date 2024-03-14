@@ -252,10 +252,10 @@ string exercise_13(int age, int years_of_experience) {
     return "Senior project manager";
   }
   else if (age >= 18 && 3 <= years_of_experience){
-    return "Proyect manager";
+    return "Project manager";
   }
   else if(age >= 18 && 3 > years_of_experience){
-    return "Proyect coordinator";
+    return "Project coordinator";
   }
 }
 
