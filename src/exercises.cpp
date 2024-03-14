@@ -248,10 +248,10 @@ string exercise_13(int age, int years_of_experience) {
   if(age >= 18){
     return "Not eligible";
   }
-  else if(age >= 18 && 5 =< years_of_experience){
+  else if(age >= 18 && 5 <= years_of_experience){
     return "Senior project manager";
   }
-  else if (age >= 18 && 3 =< years_of_experience){
+  else if (age >= 18 && 3 <= years_of_experience){
     return "Proyect manager";
   }
   else if(age >= 18 && 3 > years_of_experience){
