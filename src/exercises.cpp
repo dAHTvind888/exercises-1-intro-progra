@@ -311,7 +311,7 @@ void exercise_16(int debut, int fin) {
 
     int hour_1bs = cheap_tar, hour_2bs = exp_tar;
 
-    cout << "Has alquilado una bicicleta por" << endl;
+    cout << "Haz alquilado una bicicleta por" << endl;
     if (hour_1bs > 0)
         cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
     if (hour_2bs > 0)
