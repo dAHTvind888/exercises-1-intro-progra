@@ -323,7 +323,7 @@ void exercise_16(int debut, int fin) {
       }
       else if(17 <= fin && fin <= 24){
         exp_tar = 10 * 2;
-        cheap_tar = ((fin - 17) * 1) + (7 - debut) * 1;
+        cheap_tar = ((fin - 17) * 1) + (7 - debut);
         hour_1bs = cheap_tar;
         hour_2bs = exp_tar / 2;
       }
