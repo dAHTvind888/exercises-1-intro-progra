@@ -286,8 +286,7 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-  void exercise_16(int debut, int fin) {
-    bool cond1 = true, cond2 = true, cond3 = true;
+  bool cond1 = true, cond2 = true, cond3 = true;
     int cheap_tar = 0, exp_tar = 0, hour_1bs = 0, hour_2bs = 0, total = 0;
 
     if (fin > 24 || fin < 0 || debut < 0 || debut > 24) {
@@ -336,5 +335,4 @@ void exercise_16(int debut, int fin) {
         cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     }
     cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
-  }
 }
