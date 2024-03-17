@@ -287,7 +287,7 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
-    bool cond1 = true, cond2 = true, cond3 = true;
+  bool cond1 = true, cond2 = true, cond3 = true;
   int cheap_tar, exp_tar, hour_1bs, hour_2bs, total;
 
   if(fin > 24 || fin < 0 || debut < 0 || debut > 24){
@@ -347,15 +347,8 @@ void exercise_16(int debut, int fin) {
         hour_1bs = cheap_tar;
         }
       }
-    if(cheap_tar == 0){
-        total = exp_tar;
-    }
-    else if(exp_tar == 0){
-        total = cheap_tar;
-    }
-    else{
-        total = cheap_tar + exp_tar;
-    }
+    
+    total = hour_1bs + (hour_2bs * 2);
     cout << "Haz alquilado una bicicleta por" << endl;
     if(hour_1bs != 0){
         cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
