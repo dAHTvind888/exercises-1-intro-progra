@@ -312,12 +312,12 @@ void exercise_16(int debut, int fin) {
   if(cond1 == true && cond2 == true && cond3 == true){
     if(debut <= 7){
       if(fin <= 7){
-        cheap_tar = (fin - debut) * 1;
+        cheap_tar = (fin - debut);
         hour_1bs = cheap_tar;
       }
       else if(fin <= 17){
-        cheap_tar = (7 - debut) * 1;
-        exp_tar = (fin - 7) * 2;
+        cheap_tar = (7 - debut);
+        exp_tar = (17 - fin) * 2;
         hour_1bs = cheap_tar;
         hour_2bs = exp_tar / 2;
         }
