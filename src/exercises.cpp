@@ -329,7 +329,7 @@ void exercise_16(int debut, int fin) {
       }
     }
 
-    if(7 <= debut && debut <= 17){
+    else if(7 <= debut && debut <= 17){
       if(7 <= fin && fin <= 17){
         exp_tar = (fin - debut) * 2;
         hour_2bs = exp_tar / 2;
@@ -341,7 +341,7 @@ void exercise_16(int debut, int fin) {
         hour_2bs = exp_tar / 2;
       }
     }
-    if(17 <= debut && debut <= 24){
+    else if(17 <= debut && debut <= 24){
       if(17 <= fin && fin <= 24){
         cheap_tar = (fin - debut) * 1;
         hour_1bs = cheap_tar;
