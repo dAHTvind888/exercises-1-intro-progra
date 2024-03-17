@@ -311,7 +311,7 @@ void exercise_16(int debut, int fin) {
     }
 
     if (debut <= 7 && fin >= 0) {
-        cheap_tar = min(7, fin) - debut;
+        cheap_tar = min(7, fin) - max(0, debut);
         hour_1bs += cheap_tar;
     }
     if (debut <= 17 && fin >= 7) {
