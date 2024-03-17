@@ -356,7 +356,6 @@ void exercise_16(int debut, int fin) {
     if(hour_2bs != 0){
         cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     }
-    total = cheap_tar + exp_tar;
     cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
   }
 }
