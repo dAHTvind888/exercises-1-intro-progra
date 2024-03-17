@@ -299,37 +299,38 @@ void exercise_16(int debut, int fin) {
 
     if (!cond1) {
         cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return;
     }
     if (!cond2) {
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return;
     }
     if (!cond3) {
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+        return;
     }
 
-    if (cond1 && cond2 && cond3) {
-        if (debut <= 7 && fin >= 0) {
-            cheap_tar = min(7, fin) - debut;
-            hour_1bs = cheap_tar;
-        }
-        if (debut <= 17 && fin >= 7) {
-            int overlap = min(17, fin) - max(7, debut);
-            exp_tar += overlap;
-            hour_2bs = overlap;
-        }
-        if (debut <= 24 && fin >= 17) {
-            cheap_tar += min(fin, 24) - max(17, debut);
-            hour_1bs += cheap_tar;
-        }
-
-        total = hour_1bs * 1 + hour_2bs * 2;
-        cout << "Haz alquilado una bicicleta por" << endl;
-        if (hour_1bs != 0) {
-            cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-        }
-        if (hour_2bs != 0) {
-            cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-        }
-        cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
+    if (debut <= 7 && fin >= 0) {
+        cheap_tar = min(7, fin) - debut;
+        hour_1bs += cheap_tar;
     }
+    if (debut <= 17 && fin >= 7) {
+        exp_tar = min(17, fin) - max(7, debut);
+        hour_2bs += exp_tar;
+    }
+    if (debut <= 24 && fin >= 17) {
+        cheap_tar += min(fin, 24) - max(17, debut);
+        hour_1bs += cheap_tar;
+    }
+
+    total = hour_1bs * 1 + hour_2bs * 2;
+
+    cout << "Haz alquilado una bicicleta por" << endl;
+    if (hour_1bs != 0) {
+        cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+    }
+    if (hour_2bs != 0) {
+        cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+    }
+    cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
 }
