@@ -310,7 +310,7 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
   }
   if(cond1 == true && cond2 == true && cond3 == true){
-    if(debut < 7){
+    if(debut <= 7){
       if(fin <= 7){
         cheap_tar = (fin - debut) * 1;
         hour_1bs = cheap_tar;
@@ -329,7 +329,7 @@ void exercise_16(int debut, int fin) {
       }
     }
     
-    else if(debut < 17){
+    else if(debut <= 17){
       if(fin <= 17){
         exp_tar = (fin - debut) * 2;
         hour_2bs = exp_tar / 2;
