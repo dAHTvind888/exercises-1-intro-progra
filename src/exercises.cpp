@@ -310,52 +310,53 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
   }
   if(cond1 == true && cond2 == true && cond3 == true){
-    if(0 <= debut && debut <= 7){
-      if(0 <= fin && fin <= 7){
+    if(debut < 7){
+      if(fin <= 7){
         cheap_tar = (fin - debut) * 1;
         hour_1bs = cheap_tar;
       }
-      else if(7 <= fin && fin <= 17){
-        exp_tar = (fin - 7) * 2;
+      else if(fin <= 17){
         cheap_tar = (7 - debut) * 1;
+        exp_tar = (fin - 7) * 2;
         hour_1bs = cheap_tar;
-        hour_2bs = exp_tar / 2;   
+        hour_2bs = exp_tar / 2;
+        }
+      else if(fin <= 24){
+        cheap_tar = (7 - debut) * 1;
+        exp_tar = (fin - 17) * 2; // cambio importante, porfa funciona
+        hour_1bs = cheap_tar;
+        hour_2bs = exp_tar / 2;
       }
-      else if(17 <= fin && fin <= 24){
-        exp_tar = 10 * 2;
-        cheap_tar = ((fin - 17) * 1) + (7 - debut);
+    }
+    
+    else if(debut < 17){
+      if(fin <= 17){
+        exp_tar = (fin - debut) * 2;
+        hour_2bs = exp_tar / 2;
+      }
+      else if(fin <= 24){
+        cheap_tar = (17 - debut) * 1;
+        exp_tar = (fin - 17) * 2;
         hour_1bs = cheap_tar;
         hour_2bs = exp_tar / 2;
       }
     }
 
-    else if(7 <= debut && debut <= 17){
-      if(7 <= fin && fin <= 17){
-        exp_tar = (fin - debut) * 2;
-        hour_2bs = exp_tar / 2;
-      }
-      else if(17 <= fin && fin <= 24){
-        cheap_tar = (fin - 17) * 1;
-        exp_tar = (17 - debut) * 2;
-        hour_1bs = cheap_tar;
-        hour_2bs = exp_tar / 2;
-      }
-    }
-    else if(17 <= debut && debut <= 24){
-      if(17 <= fin && fin <= 24){
+    else if(debut <= 24){
+      if(fin <= 24){
         cheap_tar = (fin - debut) * 1;
         hour_1bs = cheap_tar;
-        }
       }
-    
-    total = hour_1bs + (hour_2bs * 2);
+    }
+
     cout << "Haz alquilado una bicicleta por" << endl;
     if(hour_1bs != 0){
-        cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+      cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
     }
     if(hour_2bs != 0){
-        cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+      cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     }
+    total = cheap_tar + exp_tar;
     cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
   }
 }
