@@ -322,8 +322,8 @@ void exercise_16(int debut, int fin) {
         hour_2bs = exp_tar / 2;
         }
       else if(fin <= 24){
-        cheap_tar = (7 - debut) * 1;
-        exp_tar = (fin - 17) * 2; // cambio importante, porfa funciona
+        cheap_tar = (7 - debut) + (24 - fin);
+        exp_tar = 10 * 2;
         hour_1bs = cheap_tar;
         hour_2bs = exp_tar / 2;
       }
@@ -335,8 +335,8 @@ void exercise_16(int debut, int fin) {
         hour_2bs = exp_tar / 2;
       }
       else if(fin <= 24){
-        cheap_tar = (17 - debut) * 1;
-        exp_tar = (fin - 17) * 2;
+        cheap_tar = (24 - fin);
+        exp_tar = (17 - debut) * 2;
         hour_1bs = cheap_tar;
         hour_2bs = exp_tar / 2;
       }
@@ -344,7 +344,7 @@ void exercise_16(int debut, int fin) {
 
     else if(debut <= 24){
       if(fin <= 24){
-        cheap_tar = (fin - debut) * 1;
+        cheap_tar = (fin - debut);
         hour_1bs = cheap_tar;
       }
     }
