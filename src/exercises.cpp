@@ -349,7 +349,7 @@ void exercise_16(int debut, int fin) {
         cheap_tar = (fin - debut) * 1;
         hour_1bs = cheap_tar;
         }
-      }
+    }
 
     cout << "Haz alquilado una bicicleta por" << endl;
     if(hour_1bs > 0){
@@ -360,6 +360,6 @@ void exercise_16(int debut, int fin) {
     }
     total = cheap_tar + exp_tar;
     cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
-    }
+  }
 }
 
