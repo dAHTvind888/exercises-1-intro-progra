@@ -286,7 +286,8 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-  bool cond1 = true, cond2 = true, cond3 = true;
+  void exercise_16(int debut, int fin) {
+    bool cond1 = true, cond2 = true, cond3 = true;
     int cheap_tar = 0, exp_tar = 0, hour_1bs = 0, hour_2bs = 0, total = 0;
 
     if (fin > 24 || fin < 0 || debut < 0 || debut > 24) {
@@ -315,7 +316,9 @@ void exercise_16(int debut, int fin) {
         hour_1bs += cheap_tar;
     }
     if (debut <= 17 && fin >= 7) {
-        exp_tar = min(17, fin) - max(7, debut);
+        int overlap_start = max(7, debut);
+        int overlap_end = min(17, fin);
+        exp_tar = overlap_end - overlap_start;
         hour_2bs += exp_tar;
     }
     if (debut <= 24 && fin >= 17) {
@@ -333,4 +336,5 @@ void exercise_16(int debut, int fin) {
         cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     }
     cout << "El monto total a pagar es de " << total << " boliviano(s)." << endl;
+  }
 }
