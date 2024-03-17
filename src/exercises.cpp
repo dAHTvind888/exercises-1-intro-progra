@@ -355,10 +355,10 @@ void exercise_16(int debut, int fin) {
     
     total = hour_1bs + (hour_2bs * 2);
     cout << "Haz alquilado una bicicleta por" << endl;
-    if(hour_1bs != 0){
+    if(hour_1bs > 0){
         cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
     }
-    if(hour_2bs != 0){
+    if(hour_2bs > 0){
         cout << hour_2bs << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     }
     total = cheap_tar + exp_tar;
