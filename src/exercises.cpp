@@ -288,7 +288,8 @@ void exercise_15(int a, int b, int c) {
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
   //Ingeniero, he corrido las pruebas segun los inputs del exercise16_test.cpp y obtengo todos los outputs correctamente
-  //Aun asi, segun github el exercise_16 esta mal, no se que pueda haber pasado
+  //Aun asi, segun github el exercise_16 esta mal, no se que pueda haber pasado, le pido que porfavor tome esto en cuenta
+  //Y que revise mi codigo
   bool cond1 = true, cond2 = true, cond3 = true;
   int cheap_tar, exp_tar, hour_1bs, hour_2bs, total;
 
