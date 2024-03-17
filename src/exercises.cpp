@@ -353,7 +353,6 @@ void exercise_16(int debut, int fin) {
         }
     }
     
-    total = hour_1bs + (hour_2bs * 2);
     cout << "Haz alquilado una bicicleta por" << endl;
     if(hour_1bs > 0){
         cout << hour_1bs << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
